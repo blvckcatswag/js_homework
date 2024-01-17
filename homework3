@@ -1,0 +1,19 @@
+let measurementUnit = "km"; // единица измерения (km, hours, kg)
+let quantity = 10;   // количество
+
+switch (measurementUnit) {
+  case "км":
+    let meters = quantity * 1000;
+    console.log(quantity + " км это " + meters + " м.");
+    break;
+  case "час":
+    let minutes = quantity * 60;
+    console.log(quantity + " час это " + minutes + " мин.");
+    break;
+  case "кг":
+    let grams = quantity * 1000;
+    console.log(quantity + " кг это " + grams + " г.");
+    break;
+  default:
+    console.log("Неизвестная единица измерения");
+}
